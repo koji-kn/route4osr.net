@@ -1,0 +1,129 @@
+@use"../../foundation/variables";
+@use"../../foundation/mixin";
+
+.p-gmenu{
+    
+    >.list{
+        transition: all 300ms 0s ease;
+        position: fixed;
+        padding-top: 60px;
+        width: 50vw;
+        height: 100vh;
+        top: 0;
+        left: 100%;
+        background: variables.$color--black;
+        z-index: 100;
+
+        @include mixin.breakpoint( pc ) {
+            display: flex;
+			width         : inherit;
+			height        : 90px;
+			padding       : inherit;
+			position      : static;
+			background    : inherit;
+			transition: inherit;
+		}
+        
+    }
+    
+    &__main{
+        margin-bottom: 50px;
+
+        @include mixin.breakpoint( pc ) {
+            display: flex;
+		}
+    }
+    
+    &__main--contents,
+    &__sns--contents{
+        display: block;
+        padding-left: 20px;
+        line-height: 40px;
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+    
+    &__main--contents:hover,
+    &__sns--contents:hover{
+        background-color: variables.$color--menu-hover;
+        transition: background-color 0.1s;
+    }
+    
+    &__main--contents{
+        @include mixin.breakpoint( pc ) {
+            padding-left: 15px;
+            padding-right: 15px;
+            line-height: 90px;
+		}
+
+        @include mixin.breakpoint( full ) {
+            font-size: 2.0rem;
+            margin-right: 20px;
+		}
+        
+    }
+
+    &__sns{
+        @include mixin.breakpoint( pc ) {
+            display: flex;
+            align-items: center;
+		}
+
+        @include mixin.breakpoint( full ) {
+            margin-right: 20px;
+		}
+
+        &--contents{
+            @include mixin.breakpoint( pc ) {
+                display: none;
+            }
+        }
+
+        &--img{
+            display: none;
+    
+            @include mixin.breakpoint( pc ) {
+                display: block;
+                max-width: 28px;
+                max-height: 28px;
+                margin-right: 15px;
+            }
+
+            &:hover{
+               opacity: 0.8;
+               transition: opacity 0.1s;
+            }
+        }
+    }
+
+
+
+    &.is-open{
+        >.list{
+            left: 50%;
+        }
+    }
+  
+}
+
+.mask{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    opacity: 0;
+    z-index: 99;
+
+    @include mixin.breakpoint(pc){
+        display: none;
+    }
+
+    &.is-open{
+        opacity: 0.7;
+        transition: opacity 0.1s;
+    }
+}
+
+
