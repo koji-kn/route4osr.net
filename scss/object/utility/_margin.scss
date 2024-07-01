@@ -1,3 +1,19 @@
+@use"../../foundation/variables";
+@use"../../foundation/mixin";
+
 .u-margin__right{
     margin-right: 20px;
+}
+
+.u-margin__bottom{
+    margin-bottom: 100px;
+
+    @include mixin.breakpoint(pc){
+        margin-bottom: 150px;
+    }
+}
+
+.u-margin__center{
+    margin-left: auto;
+    margin-right: auto;
 }

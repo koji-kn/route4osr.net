@@ -1,0 +1,41 @@
+@use"../../foundation/variables";
+@use"../../foundation/mixin";
+
+.p-mainvisual{
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 1500px;
+    padding-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    position: relative;
+    
+	@include mixin.breakpoint(pc){
+        padding-top: 90px;
+    }
+
+    img{
+        width: 100%;
+        height: 50vw;
+        object-fit: cover;
+    }
+}
+
+.swiper-pagination{
+    position: absolute;
+    bottom: 0;
+
+    &-bullet{
+        background: variables.$color--gray;
+        opacity: 0.8;
+
+        &-active{
+            background: variables.$color--white;
+            opacity: 1;
+        }
+    }
+}
+
+

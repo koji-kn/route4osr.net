@@ -1,7 +1,21 @@
+@use"../foundation/variables";
+@use"../foundation/mixin";
+
 .l-main{
     width: 100%;
     height: auto;
     background-image: url(../images/stone_00126.jpg);
     background-repeat: repeat;
     background-size: contain;
+}
+
+.p-jumbotron{
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    padding: 30px 20px;
+
+    @include mixin.breakpoint(pc){
+        padding: 50px;
+    }
 }

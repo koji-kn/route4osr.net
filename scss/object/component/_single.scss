@@ -1,5 +1,16 @@
-.list{
-    padding-top: 50px;
-    background: rgba($color: #000000, $alpha: 0.5);
-    
+@use"../../foundation/variables";
+@use"../../foundation/mixin";
+
+.c-single__title{
+    // font-family: "Hind", sans-serif;
+    // font-weight: 500;
+    // font-style: normal;
+    color: variables.$color--title;
+    font-size: 4.8rem;
+    text-align: center;
+
+    @include mixin.breakpoint(pc){
+        font-size: 12.8rem;
+    }
+
 }

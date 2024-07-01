@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11.1.4/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="./images/common/icon/route-icon.png">
 </head>
@@ -47,42 +48,51 @@
 
 </header>
 
-<main class="l-main">
-    <h1>h1</h1>
-    <h2 class="c-single__title">about RÖUTE</h2>
-    <p>testtesttesttesttesttesttesttest</p>
-    <p>testtesttesttesttesttesttesttest</p>
-    <p>testtesttesttesttesttesttesttest</p>
-    <p>testtesttesttesttesttesttesttest</p>
-    <p>testtesttesttesttesttesttesttest</p>
-    <p>testtesttesttesttesttesttesttest</p>
-    <p>testtesttesttesttesttesttesttest</p>
-    <p>testtesttesttesttesttesttesttest</p>
-    <p>testtesttesttesttesttesttesttest</p>
-    <p>testtesttesttesttesttesttesttest</p>
-    <p>testtesttesttesttesttesttesttest</p>
-    <p>testtesttesttesttesttesttesttest</p>
-    <p>testtesttesttesttesttesttesttest</p>
-    <p>testtesttesttesttesttesttesttest</p>
-    <p>testtesttesttesttesttesttesttest</p>
-    <p>testtesttesttesttesttesttesttest</p>
-    <p>testtesttesttesttesttesttesttest</p>
-    <p>testtesttesttesttesttesttesttest</p>
-    <p>testtesttesttesttesttesttesttest</p>
-    <p>testtesttesttesttesttesttesttest</p>
-    <p>testtesttesttesttesttesttesttest</p>
-    <p>testtesttesttesttesttesttesttest</p>
-    <p>testtesttesttesttesttesttesttest</p>
-    <p>testtesttesttesttesttesttesttest</p>
-    <p>testtesttesttesttesttesttesttest</p>
-    <p>testtesttesttesttesttesttesttest</p>
-    <p>testtesttesttesttesttesttesttest</p>
-    <p>testtesttesttesttesttesttesttest</p>
-    <p>testtesttesttesttesttesttesttest</p>
-    <p>testtesttesttesttesttesttesttest</p>
-    <p>testtesttesttesttesttesttesttest</p>
-    <p>testtesttesttesttesttesttesttest</p>
+<main class="l-main u-margin__center">
+    <div class="p-mainvisual u-margin__bottom">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./images/mainvisual/slidemainvisual.jpg" alt="メインの画像"></div>
+                <div class="swiper-slide"><img src="./images/mainvisual/slideminato.png" alt="MINATOの画像"></div>
+                <div class="swiper-slide"><img src="./images/mainvisual/slidenami.png" alt="なみおかの画像"></div>
+                <div class="swiper-slide"><img src="./images/mainvisual/slidekoji.png" alt="カネコの画像"></div>
+                <div class="swiper-slide"><img src="./images/mainvisual/slideall.jpg" alt="ステージ画像"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <!-- <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div> -->
+        </div>
+    
+    
+    </div>
 
+    <div class="p-jumbotron u-margin__bottom u-margin__center">
+        <h1 class="c-single__title">about RÖUTE</h1>
+        <div class="p-jumbotron__introduction u-margin__center">
+            <p>RÖUTEは、3ピースという最小限の人数でロックの限界に挑戦しています。G&VO、B&VOというツインボーカル形態で、デュエットや掛け合いなどをして思いをリスナーに伝えています。</p>
+            <p>ヘヴィなリフに邦楽メロディを乗せ、ロックでありながらデュエットも出来る、そんな既成概念を打ち破った形態でやっています。</p>
+            <p>楽曲は無駄なものをそぎ落としタイトにして、濃密にしています。パンクとヘヴィ系と歌謡ロックのいいとこ取りを追求しています。</p>   
+        </div>
+    </div>
+
+    <div class="member u-margin__bottom">
+        <h1 class="c-single__title">MEMBER</h1>
+    </div>
+
+    <div class="member u-margin__bottom">
+        <h1 class="c-single__title">NEWS</h1>
+        <p>testtesttesttesttesttesttesttest</p>
+        <p>testtesttesttesttesttesttesttest</p>
+        <p>testtesttesttesttesttesttesttest</p>
+        <p>testtesttesttesttesttesttesttest</p>
+        <p>testtesttesttesttesttesttesttest</p>
+        <p>testtesttesttesttesttesttesttest</p>
+    </div>
+
+    <div class="member u-margin__bottom">
+        <h1 class="c-single__title">New Release</h1>
+    </div>
+  
 </main>
 
 <footer>
@@ -90,7 +100,8 @@
 </footer>
 
 <script src="./js/jquery-3.7.1.min.js"></script>
-<!-- <script type="text/javascript" src="./js/jquery.inview.min.js"></script> -->
-<script src="./js/hamburger.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11.1.4/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="./js/jquery.inview.min.js"></script>
+<script src="./js/main.js"></script>
 </body>
 </html>

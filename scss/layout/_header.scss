@@ -9,6 +9,8 @@
     display: flex;
     justify-content: space-between;
     position: fixed;
+    font-family: "Hind", sans-serif;
+    font-weight: 500;
     z-index: 90;
     opacity: 0.85;
 
@@ -17,10 +19,10 @@
     }
     
     &__logo{
-        width: 120px;
+        width: 140px;
         height: auto;
         display:inline-block;
-        line-height: 50px;
+        line-height: 60px;
         margin-left: 10px;
 
         @include mixin.breakpoint(pc){

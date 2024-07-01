@@ -1,0 +1,26 @@
+@use"../../foundation/variables";
+@use"../../foundation/mixin";
+
+.p-jumbotron{
+    background-image: url(../images/about.jpg);
+    background-color: rgba(0,0,0,0.5);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: center;
+
+    &__introduction{
+        max-width: 800px;
+    }
+
+    p{
+        font-weight: bold;
+        line-height: 2rem;
+        margin-bottom: 10px;
+
+        @include mixin.breakpoint(pc){
+            font-size: 2.4rem;
+            line-height: normal;
+            margin-bottom: 20px;
+        }
+    }
+}
