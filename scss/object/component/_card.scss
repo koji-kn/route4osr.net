@@ -1,0 +1,35 @@
+@use"../../foundation/variables";
+@use"../../foundation/mixin";
+
+.c-card{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+    
+
+    // &__info{
+    //     margin-left: 30px;
+
+    //     @include mixin.breakpoint(pc){
+    //         margin-left: 50px;
+    //     }
+    // }
+
+    &:hover{
+        cursor: pointer;
+    }
+
+}
+
+
+// HTMLテンプレート
+// 
+// <div class="c-card">
+//     <div class="c-card__img">
+//         <img src="" alt="">  
+//     </div>
+//     <div class="c-card__info">
+//         <h2 class="c-card__title"></h2>
+//         <p class="c-card__dedail"></p>           
+//     </div>
+// </div>

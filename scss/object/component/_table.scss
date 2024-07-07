@@ -1,0 +1,19 @@
+@use"../../foundation/variables";
+@use"../../foundation/mixin";
+
+.c-table{
+    border-top: 1px solid variables.$color--white;
+
+    // tr{
+    // }
+    
+    td{
+        font-size: 1.4rem;
+        padding: 10px 20px;
+        border-bottom: 1px solid variables.$color--white;
+
+        @include mixin.breakpoint(pc){
+            font-size: 1.8rem;
+        }
+    }
+}

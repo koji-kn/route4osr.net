@@ -1,0 +1,22 @@
+.c-player{
+
+    &__audio{
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    &__title{
+        text-align: center;
+    }
+}
+
+// テンプレート
+// <div class="c-player">
+//     <h2 class="c-player__title"></h2>
+//     <div class="c-player__audio">
+//         <audio controls>
+//             <source src="" type="audio/mp3">
+//             <p>ご利用のブラウザは音声ファイルの再生に対応しておりません</p>
+//         </audio>
+//     </div>
+// </div>

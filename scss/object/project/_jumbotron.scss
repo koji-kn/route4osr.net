@@ -2,14 +2,28 @@
 @use"../../foundation/mixin";
 
 .p-jumbotron{
-    background-image: url(../images/about.jpg);
-    background-color: rgba(0,0,0,0.5);
-    background-blend-mode: darken;
-    background-size: cover;
-    background-position: center;
-
+    // background-image: url(../images/about.jpg);
+    // background-color: rgba(0,0,0,0.5);
+    // background-blend-mode: darken;
+    // background-size: cover;
+    // background-position: center;
+    position: relative;
+    
+    &__img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        opacity: 0.6;
+    }
+    
     &__introduction{
         max-width: 800px;
+        position: sticky;
+        z-index: 1;
     }
 
     p{

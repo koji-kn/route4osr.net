@@ -9,13 +9,82 @@
     background-size: contain;
 }
 
+.p-jumbotron,
+.member,
+.new-relaese{
+    max-width: max-content;
+    
+    @include mixin.breakpoint(tablet){
+        max-width: 1200px;
+    }
+}
+
 .p-jumbotron{
-    width: 100%;
-    max-width: 1200px;
-    height: auto;
     padding: 30px 20px;
 
     @include mixin.breakpoint(pc){
         padding: 50px;
     }
+}
+
+.member{
+    &__img{
+        max-width: 160px;
+        max-height: 280px;
+
+        @include mixin.breakpoint(tablet){
+            max-width: 390px;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__name,
+    &__part{
+        display: block;
+        margin-left: 30px;
+
+        @include mixin.breakpoint(tablet){
+            margin-left: 0;
+            text-align: center;
+        }        
+    }
+
+    &__part{
+        font-size: 2.0rem;
+        font-weight: bold;
+
+        @include mixin.breakpoint(pc){
+            font-size: 2.8rem;
+        }
+
+    }
+
+    &__card{
+        min-width: 370px;
+
+        @include mixin.breakpoint(tablet){
+            flex-direction: column;
+            min-width: auto;
+        }
+    }
+    
+}
+
+.wrap{
+
+    @include mixin.breakpoint(tablet){
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.news{
+    max-width: max-content;
+}
+
+.span__news{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: variables.$color--title;
+    padding: 0 10px;
 }

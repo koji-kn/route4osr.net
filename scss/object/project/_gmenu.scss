@@ -37,6 +37,7 @@
     &__main--contents,
     &__sns--contents{
         display: block;
+        font-weight: bold;
         padding-left: 20px;
         line-height: 40px;
     }
@@ -99,6 +100,10 @@
     &.is-open{
         >.list{
             left: 50%;
+
+            @include mixin.breakpoint(tablet){
+                left: 60%;
+            }
         }
     }
   
