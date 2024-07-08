@@ -9,13 +9,17 @@ body{
     min-width: 320px;
     width: 100%;
     margin: 0;
-    background: variables.$color--gray;
     font-size: 1.6rem;
     font-family: "Noto Sans JP", sans-serif;
     color: variables.$color--white;
     line-height: 1.7;
     overflow-x: hidden;
     text-shadow: 1px 1px 2px variables.$color--black;
+    background-image: url(../images/stone_00126.jpg);
+    background-repeat: repeat;
+    background-size: contain;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: darken;
 }
 
 img{
@@ -47,6 +51,14 @@ h2{
     }
 }
 
+h3{
+    font-size: 1.8rem;
+
+    @include mixin.breakpoint(pc){
+        font-size: 2.8rem;
+    }
+}
+
 // h4{
 //     font-size: 1.4rem;
 //     height: 50px;
@@ -62,7 +74,25 @@ a{
     text-decoration: none;
 }
 
+a:hover{
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
+    text-decoration-skip-ink: none;
+}
+
 audio{
     width: 100%;
 }
+
+.more-link{
+    text-align: center;
+    font-weight: bold;
+
+    > a{
+      color: variables.$color--link;
+    }
+}
+
+
+
 

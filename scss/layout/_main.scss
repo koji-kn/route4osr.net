@@ -4,9 +4,6 @@
 .l-main{
     width: 100%;
     height: auto;
-    background-image: url(../images/stone_00126.jpg);
-    background-repeat: repeat;
-    background-size: contain;
 }
 
 .p-jumbotron,
@@ -18,6 +15,13 @@
         max-width: 1200px;
     }
 }
+
+.pick-up{
+    @include mixin.breakpoint(tablet){
+        max-width: 1200px;
+    }
+}
+
 
 .p-jumbotron{
     padding: 30px 20px;
@@ -71,11 +75,15 @@
 }
 
 .wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     @include mixin.breakpoint(tablet){
-        display: flex;
+        flex-direction: row;
         justify-content: space-between;
     }
+
 }
 
 .news{
@@ -87,4 +95,8 @@
     font-weight: bold;
     color: variables.$color--title;
     padding: 0 10px;
+}
+
+.last-article{
+    max-width: 1200px;
 }

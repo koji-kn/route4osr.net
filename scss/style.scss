@@ -10,7 +10,7 @@
 // ==========================================================================
 @forward"../scss/layout/main";
 @forward"../scss/layout/header";
-
+@forward"../scss/layout/footer";
 
 // ==========================================================================
 // Object
@@ -19,6 +19,9 @@
 @forward"../scss/object/component/card";
 @forward"../scss/object/component/table";
 @forward"../scss/object/component/player";
+@forward"../scss/object/component/container";
+@forward"../scss/object/component/movie";
+@forward"../scss/object/component/typography";
 
 // -----------------------------------------------------------------
 // Project
@@ -27,7 +30,6 @@
 @forward"../scss/object/project/hamburger";
 @forward"../scss/object/project/mainvisual";
 @forward"../scss/object/project/jumbotron";
-
 // -----------------------------------------------------------------
 // utility
 // -----------------------------------------------------------------

@@ -2,15 +2,17 @@
 @use"../../foundation/mixin";
 
 .c-table{
+    border-collapse: collapse;
     border-top: 1px solid variables.$color--white;
 
-    // tr{
-    // }
+    tr{
+        border-bottom: 1px solid variables.$color--white;
+    }
     
     td{
         font-size: 1.4rem;
+        font-weight: bold;
         padding: 10px 20px;
-        border-bottom: 1px solid variables.$color--white;
 
         @include mixin.breakpoint(pc){
             font-size: 1.8rem;

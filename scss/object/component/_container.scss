@@ -1,0 +1,13 @@
+@use"../../foundation/variables";
+@use"../../foundation/mixin";
+
+.c-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include mixin.breakpoint(tablet){
+        flex-direction: initial;
+        justify-content: space-between;
+    }
+}
