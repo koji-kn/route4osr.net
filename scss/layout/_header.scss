@@ -29,6 +29,9 @@
             width: 200px;
             line-height: 80px;
         }
+        @include mixin.breakpoint(full){
+            margin-left: 30px;
+        }
         
     }
         

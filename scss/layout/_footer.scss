@@ -4,10 +4,18 @@
 .l-footer{
     width: 100%;
     height: auto;
+    padding-top: 20px;
     background-color: #000;
 
     &__logo{
         width: 300px;
+
+        @include mixin.breakpoint(pc){
+            width: 80%;
+            min-width: 300px;
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
 
     &__sns{
@@ -19,18 +27,54 @@
             height: 60px;
             margin: 3px;
         }
+
     }
 
-
-    &__wrap{
-            
-        @include mixin.breakpoint(tablet){
-            flex-direction: row-reverse;
-            justify-content: space-between;
+    &__link{
+        padding: 20px;
+        
+        img {
+            margin-bottom: 20px;
+        }
+        
+    }
+    
+    &__link,
+    &__info{  
+        max-width: 600px;
+        margin-bottom: 50px;
+        
+        @include mixin.breakpoint(pc){
+            flex: 1;
         }
     }
     
+    
+    &__wrap{
+        
+        @include mixin.breakpoint(tablet){
+            flex-direction: row-reverse;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
 
+        @include mixin.breakpoint(pc){
+            flex-wrap: nowrap;
+        }
+    }
+    
+    
 }
 
+.facebook{
+    margin-bottom: 50px;
+}
+
+.copyright{
+    height: 90px;
+    line-height: 90px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
 

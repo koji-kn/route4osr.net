@@ -23,13 +23,17 @@
 			background    : inherit;
 			transition: inherit;
 		}
+
+        @include mixin.breakpoint(full) {
+            margin-right: 30px;
+		}
         
     }
     
     &__main{
         margin-bottom: 50px;
 
-        @include mixin.breakpoint( pc ) {
+        @include mixin.breakpoint(pc) {
             display: flex;
 		}
     }
