@@ -87,6 +87,23 @@ audio {
   color: #00FFFF;
 }
 
+.inview,
+.inview-back {
+  transform: translateY(30px);
+  opacity: 0;
+  transition: tramsform 1s, opacity 1s;
+}
+
+.inview.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.inview-back.show {
+  transform: translateY(0);
+  opacity: 0.5;
+}
+
 .l-main {
   width: 100%;
   height: auto;
@@ -382,7 +399,6 @@ audio {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  opacity: 0.5;
 }
 .c-typography__title {
   position: absolute;
@@ -615,7 +631,6 @@ audio {
   top: 0;
   left: 0;
   z-index: 0;
-  opacity: 0.6;
 }
 .p-jumbotron__introduction {
   max-width: 800px;

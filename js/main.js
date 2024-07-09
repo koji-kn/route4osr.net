@@ -39,5 +39,48 @@
         },
     });
 
+    //画像インビュー
+    $(window).on('scroll',function(){
+        $('.inview').each(function(){
+            let targetPosition = $(this).offset().top;
+            let scroll = $(window).scrollTop();
+            let windowHeight = $(window).height();
+            if(scroll > targetPosition - windowHeight){
+                $(this).addClass('show');
+            }
+        });
+    });
+
+    $(window).on('load',function(){
+        $('.inview-back').each(function(){
+            let targetPosition = $(this).offset().top;
+            let scroll = $(window).scrollTop();
+            let windowHeight = $(window).height();
+            if(scroll > targetPosition - windowHeight){
+                $(this).addClass('show');
+            }
+        });
+    });
+    $(window).on('scroll',function(){
+        $('.inview-back').each(function(){
+            let targetPosition = $(this).offset().top;
+            let scroll = $(window).scrollTop();
+            let windowHeight = $(window).height();
+            if(scroll > targetPosition - windowHeight){
+                $(this).addClass('show');
+            }
+        });
+    });
+
+    $(window).on('load',function(){
+        $('.inview').each(function(){
+            let targetPosition = $(this).offset().top;
+            let scroll = $(window).scrollTop();
+            let windowHeight = $(window).height();
+            if(scroll > targetPosition - windowHeight){
+                $(this).addClass('show');
+            }
+        });
+    });
 
 }

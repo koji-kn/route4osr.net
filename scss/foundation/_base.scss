@@ -93,6 +93,22 @@ audio{
     }
 }
 
+.inview,
+.inview-back{
+    transform: translateY(30px);
+    opacity: 0;
+    transition: tramsform 1s, opacity 1s;
+}
+
+.inview.show{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.inview-back.show{
+    transform: translateY(0);
+    opacity: 0.5;
+}
 
 
 
