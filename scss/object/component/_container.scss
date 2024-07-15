@@ -2,12 +2,11 @@
 @use"../../foundation/mixin";
 
 .c-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    @include mixin.breakpoint(tablet){
-        flex-direction: initial;
-        justify-content: space-between;
-    }
+    max-width: 1000px;
+    background: rgba($color: #000000, $alpha: 0.5);
+    margin: 50px auto;
+    // @include mixin.breakpoint(tablet){
+    //     flex-direction: initial;
+    //     justify-content: space-between;
+    // }
 }

@@ -6,17 +6,16 @@
     width: 100%;
     height: auto;
     max-height: 100vh;
-    padding-top: 60px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     position: relative;
     overflow: hidden;
-    
-	@include mixin.breakpoint(pc){
-        padding-top: 90px;
-    }
 
+    @include mixin.breakpoint(full){
+        max-height: 90vh;
+    }
+    
     img{
         width: 100%;
         object-fit: cover;

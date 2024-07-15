@@ -1,0 +1,61 @@
+@use"../../foundation/variables";
+@use"../../foundation/mixin";
+
+
+.p-profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+
+    &__title{
+        font-size: 3.6rem;
+        
+        @include mixin.breakpoint(pc){
+            font-size: 9.2rem;
+        }
+    }
+
+    &__infomation{
+        max-width: 800px;
+        margin: 50px 20px;
+
+        p{
+            font-size: 1.6rem;
+
+            @include mixin.breakpoint(pc){
+                font-size: 2.0rem;
+            }
+        }
+    }
+
+    &__gallery{
+        width: 100%;
+        max-width: 1200px;
+        padding: 10px;
+        display: grid;
+        grid-template-columns:1fr 1fr;
+        gap: 5px;
+        margin-bottom: 100px; 
+
+        @include mixin.breakpoint(tablet){
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        
+        @include mixin.breakpoint(pc){
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 10px;
+        }
+
+    }
+
+    &__img{
+        width: 100%;
+        aspect-ratio: 4/3;
+        
+        img{
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}

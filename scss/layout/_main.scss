@@ -1,12 +1,19 @@
 @use"../foundation/variables";
 @use"../foundation/mixin";
+@use"sass:math";
 
 .l-main{
     width: 100%;
     height: auto;
+    padding-top: 60px;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+
+    @include mixin.breakpoint(pc){
+        padding-top: 90px;
+    }
 }
 
-.p-jumbotron,
 .member,
 .new-relaese{
     max-width: max-content;
@@ -16,6 +23,7 @@
     }
 }
 
+.p-jumbotron,
 .pick-up{
     @include mixin.breakpoint(tablet){
         max-width: 1200px;
@@ -70,6 +78,11 @@
             flex-direction: column;
             min-width: auto;
         }
+
+        // &:hover{
+        //     background: rgba(0,0,0,0.6);
+        //     transition: 0.3s ease-in-out;
+        // }
     }
     
 }
@@ -99,4 +112,23 @@
 
 .last-article{
     max-width: 1200px;
+}
+
+.thanks{
+    text-align: center;
+
+    &__img{
+        max-width: 50%;
+        padding-top: 50px;
+
+        @include mixin.breakpoint(tablet){
+            max-width: 30%;
+        }
+    }
+
+    &__msg{
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
 }

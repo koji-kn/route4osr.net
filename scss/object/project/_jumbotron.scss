@@ -25,6 +25,15 @@
         z-index: 1;
     }
 
+    &__title{
+        font-size: 4.8rem;
+        margin-bottom: 20px;
+
+        @include mixin.breakpoint(pc){
+            font-size: 12.8rem;
+        }
+    }
+
     p{
         font-weight: bold;
         line-height: 2rem;

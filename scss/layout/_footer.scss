@@ -4,12 +4,11 @@
 .l-footer{
     width: 100%;
     height: auto;
-    padding-top: 20px;
     background-color: #000;
-
+    
     &__logo{
         width: 300px;
-
+        
         @include mixin.breakpoint(pc){
             width: 80%;
             min-width: 300px;
@@ -17,19 +16,19 @@
             margin-right: auto;
         }
     }
-
+    
     &__sns{
         display: flex;
         justify-content: center;
-
+        
         &--img{
             width: 60px;
             height: 60px;
             margin: 3px;
         }
-
+        
     }
-
+    
     &__link{
         padding: 20px;
         
@@ -51,6 +50,7 @@
     
     
     &__wrap{
+        padding-top: 20px;
         
         @include mixin.breakpoint(tablet){
             flex-direction: row-reverse;

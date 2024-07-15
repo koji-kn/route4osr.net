@@ -1,0 +1,56 @@
+@use"../../foundation/variables";
+@use"../../foundation/mixin";
+
+.c-modal{
+
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item{
+        width: 30%;
+    }
+
+    &__item img{
+        cursor: pointer;
+    }
+
+}
+
+#modalMask{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    // /* コンテンツ全てに対して固定的に 1160pxとか指定されているときの対応で、
+    // ダサいが!importantつける */
+    // max-width: 100% !important;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 10000;
+
+    img{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        max-width: 90%;
+        max-height: 90%;
+        height: 90%;
+        object-fit: contain;
+        z-index: 10001;
+    }
+}
+
+// <div class="c-modal__wrapper">
+// <div class="c-modal__item">
+//     <img src="" alt="">
+// </div>
+
+
+// <div id="modalMask"></div>
+// </div>

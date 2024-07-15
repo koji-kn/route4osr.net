@@ -18,10 +18,9 @@
         height: 90px;
     }
     
-    &__logo{
+    &__logo {
         width: 140px;
         height: auto;
-        display:inline-block;
         line-height: 60px;
         margin-left: 10px;
 
@@ -29,6 +28,7 @@
             width: 200px;
             line-height: 80px;
         }
+
         @include mixin.breakpoint(full){
             margin-left: 30px;
         }
