@@ -1,0 +1,25 @@
+@use"../../foundation/variables";
+@use"../../foundation/mixin";
+
+.c-btn{
+    border-radius: 4px;
+    display: inline-block;
+    padding: 8px 24px;
+    font-size: 2.0rem;
+    font-weight: bold;
+
+    &:hover{
+        opacity: 0.8;
+    }    
+    
+    &__send{
+        color: variables.$color__white;
+        background: variables.$color__btn;
+    }
+
+    &__back{
+        color: variables.$color--black;
+        background: variables.$color__gray;
+        margin-left: 5px
+    }
+}

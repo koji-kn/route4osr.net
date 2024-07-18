@@ -72,3 +72,6 @@ new function(){
 	addEvent(window,"resize",footerFixed);
 	
 }
+
+//head閉じタグ直前に設置
+{/* <script type="text/javascript" src="./js/footerFixed.js"></script> */}

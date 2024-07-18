@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11.1.4/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="./images/common/icon/route-icon.png">
+    <script type="text/javascript" src="./js/footerFixed.js"></script>
 </head>
 
 <body>
@@ -32,7 +33,7 @@
                         <li><a href=""><p class="p-gmenu__main--contents">Discography</p></a></li>
                         <li><a href=""><p class="p-gmenu__main--contents">Blog</p></a></li>
                         <li><a href=""><p class="p-gmenu__main--contents">Movie</p></a></li>
-                        <li><a href=""><p class="p-gmenu__main--contents">Contact</p></a></li>
+                        <li><a href="contact.php"><p class="p-gmenu__main--contents">Contact</p></a></li>
                     </ul>
         
                     <ul class="p-gmenu__sns">

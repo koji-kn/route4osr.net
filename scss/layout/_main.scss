@@ -120,6 +120,7 @@
     &__img{
         max-width: 50%;
         padding-top: 50px;
+        margin-bottom: 30px;
 
         @include mixin.breakpoint(tablet){
             max-width: 30%;
@@ -128,7 +129,6 @@
 
     &__msg{
         text-align: center;
-        padding-top: 30px;
         padding-bottom: 50px;
     }
 }

@@ -1,0 +1,85 @@
+@use"../../foundation/variables";
+@use"../../foundation/mixin";
+
+.p-form{
+    padding: 50px;
+
+    &__group{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 25px;
+
+        @include mixin.breakpoint(pc){
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+    }
+
+
+    &__label{
+        position: relative;
+        width: 25%;
+        min-width: 180px;
+        font-weight: bold;
+        white-space: nowrap;
+        margin-bottom: 5px;
+
+        @include mixin.breakpoint(pc){
+            margin-bottom: 0;
+        }
+    }
+
+    &__input{
+        width: 100%;
+
+        @include mixin.breakpoint(pc){
+            width: 70%;
+        }
+
+        p{
+            word-break: break-word;
+        }
+
+    }
+
+
+}
+
+.require_item{
+    position: absolute;
+    top: 7px;
+    right: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: variables.$color__white;
+    background: variables.$color__span;
+    padding: 0 10px;
+}
+
+.error_msg{
+    font-size: 1.0rem;
+    color: red;
+}
+
+input,
+textarea{
+  width: 100%;
+  padding: 0 10px;
+  background: #FFF;
+  border-radius: 4px;
+}
+
+.p-form__label,
+input,
+textarea{
+    font-size: 1.6rem;
+
+    @include mixin.breakpoint(pc){
+        font-size: 2.0rem;
+    }
+}
+
+textarea{
+    height: 200px;
+}
