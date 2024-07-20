@@ -46,7 +46,7 @@ EOT;
 
 <header class="l-header">
     <h1 class="l-header__logo u-margin__right">
-        <a href="index.html"><img src="./images/common/logo/logo2022.png" alt="RÖUTEのサイトロゴ"></a>
+        <a href="index.php"><img src="./images/common/logo/logo2022.png" alt="RÖUTEのサイトロゴ"></a>
     </h1>
 </header>
 

@@ -2,11 +2,35 @@
 @use"../../foundation/mixin";
 
 .c-container{
+    width: 100%;
+    height: auto;
     max-width: 1000px;
     background: rgba(32, 32, 32, 0.4);
-    margin: 50px auto;
+    margin: 50px 10px;
+    padding-bottom: 30px;
+
+    @include mixin.breakpoint(pc){
+        margin-left: auto;
+        margin-right: auto;
+    }
     // @include mixin.breakpoint(tablet){
     //     flex-direction: initial;
     //     justify-content: space-between;
     // }
+
+    &__title{
+        height: 40px;
+        padding: 0 20px;
+        margin-bottom: 20px;
+        background: variables.$color--white;
+        color: variables.$color--black;
+        line-height: 40px;
+        font-size: 1.8rem;
+        
+        @include mixin.breakpoint(pc){
+            font-size: 2.8rem;
+            height: 50px;
+            line-height: 50px;
+        }
+    }
 }

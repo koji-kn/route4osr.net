@@ -49,7 +49,7 @@ include('./header.php');
 
             <div class="c-card member__card c-hover">
                 <div class="c-card__img">
-                    <img  class="member__img inview"src="./images/member/menbernami.jpg" alt="メンバー個々の画像 なみおか">  
+                    <img class="member__img inview"src="./images/member/menbernami.jpg" alt="メンバー個々の画像 なみおか">  
                 </div>
                 <div class="c-card__info u-margin__middle">
                     <h2 class="c-card__title member__name">なみおか</h2>
