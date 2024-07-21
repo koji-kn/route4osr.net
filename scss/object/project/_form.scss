@@ -73,13 +73,13 @@ textarea{
 .p-form__label,
 input,
 textarea{
-    font-size: 1.6rem;
+    font-size: 1.4rem;
 
     @include mixin.breakpoint(pc){
-        font-size: 2.0rem;
+        font-size: 1.6rem;
     }
 }
 
 textarea{
-    height: 200px;
+    height: 150px;
 }

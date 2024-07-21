@@ -28,6 +28,12 @@
             opacity: 1;
         }
     }
+
+    a:hover{
+        text-decoration-line: underline;
+        text-decoration-thickness: 2px;
+        text-decoration-skip-ink: none;
+    }
 }
 
 // <div class="c-hover">

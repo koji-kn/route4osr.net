@@ -2,13 +2,15 @@
 @use"../../foundation/mixin";
 
 .c-typography{
-    width: 100%;
+    width: 100vw;
     height: 150px;
     position: relative;
 
-    @include mixin.breakpoint(tablet){
+    @include mixin.breakpoint(pc){
+        width: 100%;
         max-width: 400px;
         height: 250px;
+        flex: 1;
     }
 
     &__img{

@@ -1,4 +1,21 @@
 <?php
+
+require_once('routeblog/blog.php');
+
+$blog = new Blog();
+$blogData = $blog->getAll();
+
+function h($s) {
+  return htmlspecialchars($s, ENT_QUOTES, "UTF-8");
+}
+$pageNum = $blog->getNum();
+$pagination = ceil($pageNum / 10);
+if (isset($_GET['page'])) {
+  $pages = (int)$_GET['page'];
+}else {
+  $pages = 1;
+}
+
 include('./header.php');
 ?>
 
@@ -13,38 +30,29 @@ include('./header.php');
 
     <div class="p-blog u-margin__center">
         <div class="c-container">
-            <h2 class="c-container__title">ブログ一覧</h2>
+            <h2 class="c-container__title">ブログ一覧 (<?php echo $pages ?>)</h2>
 
-            <div class="c-card p-blogcard">
-                <div class="p-blogcard__img">
-                    <img src="./images/no-image.png" alt="">
+            <?php foreach($blogData as $column): ?>
+
+            <a href="detail.php?id=<?php echo $column['id']?>">
+                <div class="c-card p-blogcard">
+                    <div class="p-blogcard__img">
+                        <img src="routeblog/<?php echo h($column['eyecatch_path'])?>" alt="">
+                    </div>
+                    <div class="p-blogcard__info">
+                        <h3 class="p-blogcard__title"><?php echo h($column['title'])?></h3>
+                        <p class="p-blogcard__dete"><?php echo h($column['post_at'])?></p>
+                        <p class="p-blogcard__content"><?php echo h($column['content'])?></p>
+                    </div>
                 </div>
-                <div class="p-blogcard__info">
-                    <h3 class="p-blogcard__title">ブログタイトル</h3>
-                    <p class="p-blogcard__dete">2024-12-12</p>
-                    <p class="p-blogcard__content">ブログ本文ブログ本文ブログ本文ブログ本文ブログ本文ブログ本文</p>
-                </div>
-            </div>
-            <div class="c-card p-blogcard">
-                <div class="p-blogcard__img">
-                    <img src="./images/no-image.png" alt="">
-                </div>
-                <div class="p-blogcard__info">
-                    <h3 class="p-blogcard__title">ブログタイトル</h3>
-                    <p class="p-blogcard__dete">2024-12-12</p>
-                    <p class="p-blogcard__content">ブログ本文ブログ本文ブログ本文ブログ本文ブログ本文ブログ本文ブログ本文ブログ本文ブログ本文ブログ本文</p>
-                </div>
-            </div>
-            <div class="c-card p-blogcard">
-                <div class="p-blogcard__img">
-                    <img src="./images/no-image.png" alt="">
-                </div>
-                <div class="p-blogcard__info">
-                    <h3 class="p-blogcard__title">ブログタイトル</h3>
-                    <p class="p-blogcard__dete">2024-12-12</p>
-                    <p class="p-blogcard__content">ブログ本文ブログ本文ブログ本文ブログ本文ブログ本文ブログ本文ブログ本文ブログ本文ブログ本文ブログ本文ブログ本文ブログ本文ブログ本文ブログ本文ブログ本文ブログ本文ブログ本文ブログ本文ブログ本文ブログ本文ブログ本文ブログ本文ブログ本文ブログ本文ブログ本文ブログ本文ブログ本文ブログ本文ブログ本文ブログ本文ブログ本文ブログ本文ブログ本文ブログ本文</p>
-                </div>
-            </div>
+            </a>
+           
+            <?php endforeach; ?>
+
+            <?php for ($x=1; $x <= $pagination ; $x++) { ?>
+	            <a class="page_num" href="?page=<?php echo $x ?>"><?php echo $x; ?></a>
+             <?php } // End of for ?>
+            
         </div>
 
         <aside class="p-blog__side">

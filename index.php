@@ -1,4 +1,17 @@
 <?php
+
+ini_set('display_errors', 1);
+
+require_once('routeblog/blog.php');
+
+$blog = new Blog();
+$id = 4;
+$result = $blog->getById($id);
+$favo_id = 2;
+$resultFavo = $blog->getById($favo_id);
+$max_id = $blog->getMaxId();
+$resultNew = $blog->getById($max_id);
+
 include('./header.php');
 ?>
 
@@ -124,19 +137,26 @@ include('./header.php');
 
     <div class="last-article u-margin__bottom u-margin__center">
         <h1 class="c-single__title">Last Article</h1>
-        <div class="wrap">
-            <article class="c-typography ">
-                <img class="c-typography__img inview-back" src="./images/no-image.png" alt="">
-                <h3 class="c-typography__title">ブログタイトルが入ります。</h3>
-            </article>
-            <article class="c-typography">
-                <img class="c-typography__img inview-back" src="./images/no-image.png" alt="">
-                <h3 class="c-typography__title">ブログタイトルが入ります。ブログタイトルが入ります。ブログタイトルが入ります。</h3>
-            </article>
-            <article class="c-typography">
-                <img class="c-typography__img inview-back" src="./images/no-image.png" alt="">
-                <h3 class="c-typography__title">ブログタイトルが入ります。</h3>
-            </article>      
+        <div class="p-blog">
+            <a href="detail.php?id=<?php echo $resultNew['id']?>">
+                <article class="c-typography">
+                    <img class="c-typography__img inview-back" src="routeblog/<?php echo $resultNew['eyecatch_path'] ?>" alt="">
+                    <h3 class="c-typography__title"><?php echo $resultNew['title'] ?></h3>
+                </article>
+            </a>
+            <a href="detail.php?id=<?php echo $result['id']?>">
+                <article class="c-typography ">
+                    <img class="c-typography__img inview-back" src="routeblog/<?php echo $result['eyecatch_path'] ?>" alt="">
+                    <h3 class="c-typography__title"><?php echo $result['title'] ?></h3>
+                </article>
+            </a>
+            <a href="detail.php?id=<?php echo $resultFavo['id']?>">
+                <article class="c-typography ">
+                    <img class="c-typography__img inview-back" src="routeblog/<?php echo $resultFavo['eyecatch_path'] ?>" alt="">
+                    <h3 class="c-typography__title"><?php echo $resultFavo['title'] ?></h3>
+                </article>
+            </a>
+       
         </div>
         <p class="more-link u-margin__top">→ <a href="">more article</a></p>
     </div>
