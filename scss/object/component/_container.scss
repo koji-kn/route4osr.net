@@ -6,7 +6,6 @@
     height: auto;
     max-width: 1000px;
     background: rgba(32, 32, 32, 0.4);
-    margin: 50px 10px;
     padding-bottom: 30px;
 
     @include mixin.breakpoint(pc){

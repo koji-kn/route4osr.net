@@ -51,7 +51,7 @@ EOT;
 </header>
 
 <main class="l-main u-margin__center">
-    <div class="c-container p-form">
+    <div class="c-container p-form u-margin__container">
         <p class="thanks__msg">以下の内容で送信します。</span></p>
 
         <div class="p-form__group">

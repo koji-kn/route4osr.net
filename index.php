@@ -131,7 +131,7 @@ include('./header.php');
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/3CZvp4MXqTM?si=_JXPfpevhG527giT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </div>
-        <p class="more-link u-margin__top">→ <a href="">more movie</a></p>
+        <p class="more-link u-margin__top">→ <a href="movie.php">more movie</a></p>
     </div>
 
 
@@ -158,7 +158,7 @@ include('./header.php');
             </a>
        
         </div>
-        <p class="more-link u-margin__top">→ <a href="">more article</a></p>
+        <p class="more-link u-margin__top">→ <a href="article.php">more article</a></p>
     </div>
 
 

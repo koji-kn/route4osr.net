@@ -29,7 +29,7 @@ include('./header.php');
     </div>
 
     <div class="p-blog u-margin__center">
-        <div class="c-container">
+        <div class="c-container u-margin__container">
             <h2 class="c-container__title">ブログ一覧 (<?php echo $pages ?>)</h2>
 
             <?php foreach($blogData as $column): ?>
@@ -55,7 +55,7 @@ include('./header.php');
             
         </div>
 
-        <aside class="p-blog__side">
+        <aside class="p-blog__side u-margin__container">
             <div class="c-container">
                 <h2 class="c-container__title">カテゴリー</h2>
                 <p>カテゴリー1</p>
@@ -88,7 +88,7 @@ include('./header.php');
 
     
 
-    <p class="more-link"><a href="index.html">TOP</a>へ戻る</p>
+    <p class="more-link u-margin__bottom"><a href="index.html">TOP</a>へ戻る</p>
 </main>
 
 <?php

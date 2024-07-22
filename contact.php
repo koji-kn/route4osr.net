@@ -37,7 +37,7 @@ include('./header.php');
         </div>
     </div>
 
-    <div class="c-container p-form">
+    <div class="c-container p-form u-margin__container">
     <form action="" method="POST" novalidate>
           <!-- <p>お問い合わせ</p> -->
           <div class="p-form__group">

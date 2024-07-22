@@ -42,7 +42,7 @@ include('./header.php');
 
     <div class="p-blog u-margin__center">
         <article>
-            <div class="c-container">
+            <div class="c-container u-margin__container">
                     <h2 class="c-container__title"><?php echo $result['title'] ?></h2>
                 <!-- <?php if(empty($result['eyecatch_path'])){echo '<img style="max-width: 50%;" src="../img/no-image.png">';}?> -->
                     <img src="routeblog/<?php echo $result['eyecatch_path'] ?>" alt="">
@@ -52,7 +52,7 @@ include('./header.php');
                     <p class="p-blog__detail"><?php echo nl2br($result['content']); ?></p> 
                 </div>
                 
-                <div class="c-container">
+                <div class="c-container u-margin__container">
                     <h2 class="c-container__title">コメント</h2>
                     <div class="u-padding__center">
                         <p><?php if(empty($result_cmts)){ echo 'この記事へのコメントはありません'; }?></p>
@@ -63,7 +63,7 @@ include('./header.php');
                     </div>
                 </div>
 
-            <div class="c-container p-form">
+            <div class="c-container p-form u-margin__container">
                 <form action="routeblog/blog/comment_create.php" method="POST">
                     <div class="p-form__group">
                         <div class="p-form__label">
@@ -89,17 +89,17 @@ include('./header.php');
                 </form>
             </div>
 
-            <div class="c-container u-text__center u-padding__top">
-                <p><a class="link-color" href="detail.php?id=<?php echo $next_no;?>">
+            <div class="c-container u-padding__top  u-padding__center u-margin__container">
+                <p ><a class="link-color" href="detail.php?id=<?php echo $next_no;?>">
                 <?php echo $result_next['title'];?></a><<<次の記事</p>
-                <p>前の記事>>><a class="link-color" href="detail.php?id=<?php echo $prev_no;?>">
+                <p class="u-text__right">前の記事>>><a class="link-color" href="detail.php?id=<?php echo $prev_no;?>">
                 <?php echo $result_prev['title'];?></a></p>
             </div>
 
         </article>   
             
             
-            <aside class="p-blog__side">
+            <aside class="p-blog__side u-margin__container">
                 <div class="c-container">
                     <h2 class="c-container__title">カテゴリー</h2>
                     <p>カテゴリー1</p>
@@ -133,7 +133,7 @@ include('./header.php');
     
 
     <p class="more-link"><a href="article.php">ブログ一覧</a>へ戻る</p>
-    <p class="more-link"><a href="index.php">TOP</a>へ戻る</p>
+    <p class="more-link u-margin__bottom"><a href="index.php">TOP</a>へ戻る</p>
 </main>
 
 <?php
