@@ -45,7 +45,7 @@ include('./header.php');
             <div class="c-container u-margin__container">
                     <h2 class="c-container__title"><?php echo $result['title'] ?></h2>
                 <!-- <?php if(empty($result['eyecatch_path'])){echo '<img style="max-width: 50%;" src="../img/no-image.png">';}?> -->
-                    <img src="routeblog/<?php echo $result['eyecatch_path'] ?>" alt="">
+                    <img class="inview" src="routeblog/<?php echo $result['eyecatch_path'] ?>" alt="">
                     <p>投稿日時：<?php echo $result['post_at'] ?></p>
                     <p>カテゴリ：<?php echo $result['category'] ?></p>
                     <hr>

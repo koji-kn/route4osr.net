@@ -132,3 +132,19 @@
         padding-bottom: 50px;
     }
 }
+
+
+.schedule{
+    &__info{
+        max-width: 800px; 
+        display: inline-block;
+        margin: 20px auto;
+    }
+
+    &__img{
+        width: 80%;
+        object-fit: contain;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}

@@ -37,7 +37,7 @@ include('./header.php');
             <a href="detail.php?id=<?php echo $column['id']?>">
                 <div class="c-card p-blogcard">
                     <div class="p-blogcard__img">
-                        <img src="routeblog/<?php echo h($column['eyecatch_path'])?>" alt="">
+                        <img class="inview" src="routeblog/<?php echo h($column['eyecatch_path'])?>" alt="">
                     </div>
                     <div class="p-blogcard__info">
                         <h3 class="p-blogcard__title"><?php echo h($column['title'])?></h3>
