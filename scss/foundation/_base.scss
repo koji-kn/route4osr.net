@@ -64,6 +64,7 @@ h3{
 
 
 p{
+    white-space: wrap;
     font-size: 1.6rem;
 
     @include mixin.breakpoint(pc){
@@ -98,6 +99,10 @@ audio{
     > a{
       color: variables.$color--link;
     }
+}
+
+.link-color{
+    color: variables.$color--link;  
 }
 
 .inview,

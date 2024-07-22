@@ -79,7 +79,7 @@ EOT;
                 <label for="inputContent">お問い合わせ</label>
             </div>
             <div class="p-form__input">
-                <p><?php echo nl2br(htmlspecialchars($post['contact'])); ?></p>
+                <p class="u-text__break"><?php echo nl2br(htmlspecialchars($post['contact'])); ?></p>
             </div>
         </div>
 

@@ -1,6 +1,10 @@
 @use"../../foundation/variables";
 @use"../../foundation/mixin";
 
+article{
+    width: 100%;
+}
+
 .p-blog,
 .p-blog__side{
     display: flex;
@@ -13,6 +17,10 @@
     @include mixin.breakpoint(pc){
         flex-direction: row;
         justify-content:space-between;
+    }
+
+    &__detail{
+        padding: 10px 20px;
     }
 
     &__side{

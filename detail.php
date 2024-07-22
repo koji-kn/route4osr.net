@@ -49,45 +49,53 @@ include('./header.php');
                     <p>投稿日時：<?php echo $result['post_at'] ?></p>
                     <p>カテゴリ：<?php echo $result['category'] ?></p>
                     <hr>
-                    <p class="blog_contents"><?php echo nl2br($result['content']); ?></p> 
+                    <p class="p-blog__detail"><?php echo nl2br($result['content']); ?></p> 
                 </div>
                 
                 <div class="c-container">
                     <h2 class="c-container__title">コメント</h2>
-                    <p><?php if(empty($result_cmts)){ echo 'この記事へのコメントはありません'; }?></p>
-                    <?php foreach($result_cmts as $result_cmt): ?>
-                    <p><?php echo nl2br($result_cmt['cmt_content']); ?></p>
-                    <h4><?php echo $result_cmt['post_name'] ?><time><?php echo $result_cmt['post_at'] ?></time></h4>
-                    <?php endforeach; ?>
-            </div>
+                    <div class="u-padding__center">
+                        <p><?php if(empty($result_cmts)){ echo 'この記事へのコメントはありません'; }?></p>
+                        <?php foreach($result_cmts as $result_cmt): ?>
+                        <p class="u-text__break"><?php echo nl2br($result_cmt['cmt_content']); ?></p>
+                        <h4 class="p-form__from"><?php echo $result_cmt['post_name'] ?><time><?php echo $result_cmt['post_at'] ?></time></h4>
+                        <?php endforeach; ?>
+                    </div>
+                </div>
 
             <div class="c-container p-form">
                 <form action="routeblog/blog/comment_create.php" method="POST">
-                <div class="p-form__group">
-                    <div class="p-form__label">
-                        <label for="post_name">お名前 :</label>
+                    <div class="p-form__group">
+                        <div class="p-form__label">
+                            <label for="post_name">お名前<span class="require_item"></label>
+                        </div>
+                        <div class="p-form__input">
+                            <input type="text" name="post_name" id="post_name">
+                            <input style="display: none;" type="text" name="post_no" value="<?= $_GET['id']?>">
+                        </div>
+                    </div>    
+                    <div class="p-form__group">
+                        <div class="p-form__label">
+                            <label for="cmt_conent">コメント</label>    
+                        </div>
+                        <div class="p-form__input">
+                            <textarea name="cmt_content" id="cmt_content" cols="30" rows="3"></textarea> 
+                        </div>
                     </div>
-                    <div class="p-form__input">
-                        <input type="text" name="post_name" id="post_name">
-                        <input style="display: none;" type="text" name="post_no" value="<?= $_GET['id']?>">
+                    <div class="thanks">
+                        <button class="c-btn c-btn__send" type="submit">送信</button>
+                        <button class="c-btn c-btn__back" type="reset">クリア</button>
                     </div>
-                </div>    
-                <div class="p-form__group">
-                    <div class="p-form__label">
-                        <label for="cmt_conent">コメント:</label>    
-                    </div>
-                    <div class="p-form__input">
-                        <textarea name="cmt_content" id="cmt_content" cols="30" rows="3"></textarea> 
-                    </div>
-                </div>
-                <div class="thanks">
-                    <button class="c-btn c-btn__send" type="submit">送信</button>
-                    <button class="c-btn c-btn__back" type="reset">クリア</button>
-
-                </div>
-                
                 </form>
             </div>
+
+            <div class="c-container u-text__center u-padding__top">
+                <p><a class="link-color" href="detail.php?id=<?php echo $next_no;?>">
+                <?php echo $result_next['title'];?></a><<<次の記事</p>
+                <p>前の記事>>><a class="link-color" href="detail.php?id=<?php echo $prev_no;?>">
+                <?php echo $result_prev['title'];?></a></p>
+            </div>
+
         </article>   
             
             
