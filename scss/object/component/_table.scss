@@ -12,10 +12,11 @@
     td{
         font-size: 1.4rem;
         font-weight: bold;
-        padding: 10px 20px;
+        padding: 15px 20px;
 
         @include mixin.breakpoint(pc){
             font-size: 1.8rem;
+            
         }
     }
 }

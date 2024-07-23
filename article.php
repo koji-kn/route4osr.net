@@ -55,7 +55,7 @@ include('./header.php');
             
         </div>
 
-        <aside class="p-blog__side u-margin__container">
+        <!-- <aside class="p-blog__side u-margin__container">
             <div class="c-container">
                 <h2 class="c-container__title">カテゴリー</h2>
                 <p>カテゴリー1</p>
@@ -82,7 +82,7 @@ include('./header.php');
                 <p>2024年 3月 (1)</p>
                 <p>2024年 2月 (1)</p>
             </div>
-        </aside>
+        </aside> -->
 
     </div>
 

@@ -97,12 +97,16 @@ include('./header.php');
 
         <table class="c-table">
             <tr>
-                <td><h4>2024.12/22<span class="span__news">new!</span></h4></td>
-                <td><h4>ニュースが入ります。</td>
+                <td><h4>2024.7/20<span class="span__news">new!</span></h4></td>
+                <td><h4>LIVEスケジュールをアップしました。<a class="link-color" href="schedule.php">8月27日(火)大宮ヒソミネ</a></h4></td>
             </tr>
             <tr>
-                <td><h4>2024.12/22</h4></td>
-                <td><h4>ニュースが入ります。</td>
+                <td><h4>2024.7/17</h4></td>
+                <td><h4><a class="link-color" href="movie.php">MOVIE</a>を追加しました。</h4></td>
+            </tr>
+            <tr>
+                <td><h4>2024.5/13</h4></td>
+                <td><h4>LIVEスケジュールをアップしました。<a class="link-color" href="schedule.php">7月12日(金)新宿HEIST</a></h4></td>
             </tr>
         </table>
 
@@ -125,10 +129,10 @@ include('./header.php');
         <h1 class="c-single__title">Pick Up</h1>
         <div class="wrap">
             <div class="c-movie">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/5CPhpwNImoo?si=8sy1r92Wx_r2PN9x" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/BsBW0ugdnEc" title="【LIVE動画】RÖUTE 「この野郎」 2024.7/12 新宿HEIST" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
             <div class="c-movie">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/3CZvp4MXqTM?si=_JXPfpevhG527giT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/5CPhpwNImoo?si=8sy1r92Wx_r2PN9x" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </div>
         <p class="more-link u-margin__top">→ <a href="movie.php">more movie</a></p>

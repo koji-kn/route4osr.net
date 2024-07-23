@@ -1,3 +1,6 @@
+@use"../../foundation/variables";
+@use"../../foundation/mixin";
+
 .c-player{
 
     &__audio{
@@ -10,6 +13,7 @@
         text-align: center;
     }
 }
+
 
 // テンプレート
 // <div class="c-player">

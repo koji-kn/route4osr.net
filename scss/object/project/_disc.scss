@@ -1,0 +1,72 @@
+@use"../../foundation/variables";
+@use"../../foundation/mixin";
+
+.disc,
+.disc__card{
+    display: flex;
+    flex-direction: column;
+    
+    @include mixin.breakpoint(tablet){
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+}
+
+.disc{
+    padding-left: 30px;
+    padding-right: 30px;
+
+    &__wrap{
+        max-width: 800px;
+    }
+
+    &__card{
+        padding: 10px;
+        align-items: center;
+    }
+
+    &__img{
+        width: 100%;
+        max-width: 300px;
+        aspect-ratio: 1/1;
+
+        img{
+            object-fit: cover;
+        }
+    }
+
+    &__list{
+        display: flex;
+        column-gap: 10px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+
+        @include mixin.breakpoint(tablet){
+            flex-direction: column;     
+        }
+    }
+
+
+    &__audio{
+
+        @include mixin.breakpoint(tablet){
+            flex: 3;
+            margin-top: 10px;      
+        }
+    }
+
+    &__title{
+
+        @include mixin.breakpoint(tablet){
+            flex: 1;
+        }
+    }
+
+    &__info{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+}

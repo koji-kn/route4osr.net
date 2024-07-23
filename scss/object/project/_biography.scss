@@ -1,0 +1,47 @@
+@use"../../foundation/variables";
+@use"../../foundation/mixin";
+
+.p-biography{
+    max-width: 1200px;
+
+    &__date{
+        line-height: 1.2;
+    }
+    
+    &__timeline{
+        
+        @include mixin.breakpoint(tablet){
+            display: flex;    
+            justify-content: space-between;
+        }
+        
+        &--content{
+            width: 100%;
+            border-left: 2px solid variables.$color--white;
+            padding-left: 60px;
+            padding-bottom: 100px;
+            position: relative;
+
+            @include mixin.breakpoint(tablet){
+                width: 75%;        
+            }
+        }
+    }
+
+    &__img{
+        max-width: 300px;
+        margin-top: 20px;
+    }
+
+    
+}
+
+.triangle{
+    position: absolute;
+    left: 0;
+    top: 5px;
+
+    @include mixin.breakpoint(pc){
+            top: 15px;
+    }
+}

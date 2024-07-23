@@ -69,6 +69,7 @@ article{
     &__img{
         height: 120px;
         flex: 1;
+        min-width: 120px;
     
         
         @include mixin.breakpoint(pc){

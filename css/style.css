@@ -394,7 +394,7 @@ audio {
 .c-table td {
   font-size: 1.4rem;
   font-weight: bold;
-  padding: 10px 20px;
+  padding: 15px 20px;
 }
 @media (min-width: 960px) {
   .c-table td {
@@ -461,7 +461,7 @@ audio {
   .c-typography {
     width: 100%;
     max-width: 400px;
-    height: 250px;
+    height: 300px;
     flex: 1;
   }
 }
@@ -1036,6 +1036,7 @@ article {
 .p-blogcard__img {
   height: 120px;
   flex: 1;
+  min-width: 120px;
 }
 @media (min-width: 960px) {
   .p-blogcard__img {
@@ -1111,6 +1112,108 @@ article {
   .p-movie__small {
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+  }
+}
+
+.disc,
+.disc__card {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 630px) {
+  .disc,
+.disc__card {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.disc {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.disc__wrap {
+  max-width: 800px;
+}
+.disc__card {
+  padding: 10px;
+  align-items: center;
+}
+.disc__img {
+  width: 100%;
+  max-width: 300px;
+  aspect-ratio: 1/1;
+}
+.disc__img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.disc__list {
+  display: flex;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+@media (min-width: 630px) {
+  .disc__list {
+    flex-direction: column;
+  }
+}
+@media (min-width: 630px) {
+  .disc__audio {
+    flex: 3;
+    margin-top: 10px;
+  }
+}
+@media (min-width: 630px) {
+  .disc__title {
+    flex: 1;
+  }
+}
+.disc__info {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.p-biography {
+  max-width: 1200px;
+}
+.p-biography__date {
+  line-height: 1.2;
+}
+@media (min-width: 630px) {
+  .p-biography__timeline {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.p-biography__timeline--content {
+  width: 100%;
+  border-left: 2px solid #FEFEFE;
+  padding-left: 60px;
+  padding-bottom: 100px;
+  position: relative;
+}
+@media (min-width: 630px) {
+  .p-biography__timeline--content {
+    width: 75%;
+  }
+}
+.p-biography__img {
+  max-width: 300px;
+  margin-top: 20px;
+}
+
+.triangle {
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
+@media (min-width: 960px) {
+  .triangle {
+    top: 15px;
   }
 }
 

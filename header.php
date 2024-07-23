@@ -28,9 +28,9 @@
         <nav class="p-gmenu">
                 <div class="list">
                     <ul class="p-gmenu__main">
-                        <li><a href=""><p class="p-gmenu__main--contents">Biography</p></a></li>
+                        <li><a href="biography.php"><p class="p-gmenu__main--contents">Biography</p></a></li>
                         <li><a href="schedule.php"><p class="p-gmenu__main--contents">Schedule</p></a></li>
-                        <li><a href=""><p class="p-gmenu__main--contents">Discography</p></a></li>
+                        <li><a href="discography.php"><p class="p-gmenu__main--contents">Discography</p></a></li>
                         <li><a href="article.php"><p class="p-gmenu__main--contents">Blog</p></a></li>
                         <li><a href="movie.php"><p class="p-gmenu__main--contents">Movie</p></a></li>
                         <li><a href="contact.php"><p class="p-gmenu__main--contents">Contact</p></a></li>
